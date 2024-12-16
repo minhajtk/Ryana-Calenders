@@ -1,0 +1,27 @@
+@media only screen and (max-width:425px){
+    .top-calender h2{
+        font-size: 3vh!important;
+    }
+    .calender-row{
+        flex-direction: column !important;
+     }
+     .contact-info{
+        width: 100%;
+        padding: 0;
+     }
+     .contact-info-map{
+        padding: 5vh;
+     }
+     .map-container{
+        width: 100%;
+     }
+     .hero h1{
+        font-size: 2rem;
+     }
+     .hero p{
+        font-size: 1rem;
+     }
+     .hero-content{
+        padding: 0 3vh;
+     }
+}

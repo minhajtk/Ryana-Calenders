@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* home page ki styling yahan hai */
+.navbar{
+    padding: 4vh 0!important;
+}
+.navbar-nav{
+    gap: 4.5vh!important;
+}
+.homepage-calender-banner{
+    width: 100%;
+    height: 45vh;
+}
+.best-selling-section{
+    flex-wrap: wrap;
+}
+
+/* about us page ki styling yahan hai */
+.about-image{
+    width: 100%;
+}
+.team-cards{
+    flex-wrap: wrap;
+}
+
+/* yahan products ke page kis tyling hai */
+.top-calender{
+    padding-top: 5vh;
+}
+
+.hero h1{
+    font-size: 7vh;
+}
+.faq-accordion{
+    padding: 10vh 10vh 0 10vh!important;
+}
+
+@media only screen and (max-width:786px){
+    .about-image img{
+        border-style: none;
+        border-radius: 0 0 25px 25px;
+        width: 100%;
+    }
+    .about-text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding:4vh 18vh;
+    }
+    .hero h1{
+        font-size: 7vh;
+    }
+    .hero p{
+        font-size: 1.2rem;
+    }
+    .contact-info-map{
+        flex-direction: column;
+    }
+    .contact-info{
+        width: 100%;
+    }
+    .map-container{
+        width: 100%;
+    }
+    .calender_prod{
+        justify-content: center;
+        width: 100%;
+    }
+    .calender_prod .img{
+        width: 70%;
+        padding:6vh 0;
+    }
+    .calender_prod .content{
+        width: 70%;
+    }
+    .calender_prod .img img{
+        width: 100%!important;
+        margin: 0;
+    }
+    
+}

@@ -1,0 +1,463 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.top-calender{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darksalmon;
+  font-family: 'Playfair Display', serif;
+}
+      .card-container {
+          padding: 20px;
+          font-family: 'Fira Sans', sans-serif;
+      }
+      .cards-box {
+          border-radius: 18px;
+          box-shadow: 1px 1px 8px;
+          overflow: hidden;
+          margin-bottom: 20px; /* Add margin for spacing */
+          font-family: 'Fira Sans', sans-serif;
+      }
+      img {
+          height: 25vh;
+          width: 100%;
+      }
+      .cards-details {
+          padding: 2vh 0;
+          font-family: 'Fira Sans', sans-serif;
+          text-align: center;
+      }
+      .product_name {
+          font-size: 3.1vh;
+          font-weight: 600;
+          font-family: 'Fira Sans', sans-serif;
+      }
+      .product_price {
+          font-size: 3vh;
+          font-family: 'Fira Sans', sans-serif;
+      }
+      
+      /* .fill{
+          color: yellow;
+      } */
+       /* button */
+      .btn {
+  padding: 1.5;
+  border:none;
+  font-size: 2.5vh;
+  border-radius: 2vh;
+  width: 100%;
+  text-align: center;
+  border-radius: 18px;
+  font-family: 'Fira Sans', sans-serif;
+
+}
+button{
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  background-color:black;
+  font-family: 'Fira Sans', sans-serif;
+  color:white;
+ }
+ .cards-box .btn{
+color: #f0f0f0;
+background-color: #000;
+font-family: 'Fira Sans', sans-serif;
+  
+ }
+ .cards-box .btn a{
+  color:white;
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+ }
+/* General styles for the calendar section */
+.calendar-box {
+  background-color: #f0f0f0; /* Light gray box color */
+  padding: 10px 20px;       /* Space inside the box */
+  margin: 10px;             /* Space between boxes */
+  border-radius: 5px;       /* Rounded corners */
+  text-align: center;       /* Center-align text */
+  font-size: 16px;          /* Adjust font size */
+  color: #333;              /* Dark text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.calendar-box {
+  background-color: #f0f0f0; /* Light gray box color */
+  padding: 10px 20px;       /* Space inside the box */
+  margin: 10px;             /* Space between boxes */
+  border-radius: 5px;       /* Rounded corners */
+  text-align: center;       /* Center-align text */
+  font-size: 16px;          /* Adjust font size */
+  color: #333;              /* Dark text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  font-family: 'Fira Sans', sans-serif;
+  cursor: pointer;          /* Pointer cursor on hover */
+}
+
+.calendar-box:hover {
+  background-color: #ddd;   /* Darker gray on hover */
+  transform: scale(1.05);   /* Slightly increase the size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow for depth */
+  color: #000;              /* Change text color to darker */
+  font-family: 'Fira Sans', sans-serif;
+}
+/* Style for the boxes containing anchor tags */
+.calendar-items a {
+  display: inline-block; /* Make anchor tags behave like a block element for better box styling */
+  padding: 10px 20px; /* Add padding inside the box */
+  margin: 10px; /* Add spacing between boxes */
+  background-color: #f9f9f9; /* Default background color of the box */
+  color: lightgray; /* Initial text color for anchor tags */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Add rounded corners to the box */
+  font-weight: bold; /* Make text bold */
+  font-family: 'Fira Sans', sans-serif;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+/* Hover effect for the anchor tags and their boxes */
+.calendar-items a:hover {
+  background-color: darkgray; /* Change box color on hover */
+  color: black; /* Change text color on hover */
+  text-decoration: none; /* Ensure no underline on hover */
+  font-family: 'Fira Sans', sans-serif;
+}
+/* Apply Fira Sans font to all text in the body */
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* Apply Playfair Display font to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+.calender-row{
+  display: flex;
+  gap: 2vh;
+  flex-wrap: wrap;
+}
+.calender-product{
+  width: 40vh;
+}
+.calender_btn{
+  width: 100%;
+  padding: 1vh 0;
+  transition: 0.3s ease;
+}
+.calender_btn:hover{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0 0 20px 20px;
+}
+.calender_btn:hover a{
+  color: black;
+}
+.calender_btn a{
+  color: white;
+  text-decoration: none;
+}
+* {
+  
+  padding: 0px;
+  margin: 0px;
+}
+
+.head {
+margin-top: 50px;
+margin-left: 50px;
+color: black;
+}
+.p1 {
+font-size: 28px;
+margin-left: 70px;
+font-family: "Playfair Display", serif;
+color: #998892;
+}
+.footer {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color: #998892;
+color: white;
+}
+.footer-section {
+flex: 1;
+padding: 10px;
+}
+.footer-section h3 {
+margin-bottom: 10px;
+}
+.footer-section ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.social-icons {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+background-color:#ad8c8c;
+color: white;
+font-size: 24px;
+gap: 10px; 
+}
+.footer-section.contact {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.footer-section.contact p {
+margin: 0;
+}
+/* Adjust the about-container to align the image to the right side */
+.about-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 50px;
+flex-direction: row-reverse;  /* This moves the image to the right side */
+}
+.about-text {
+width: 60%;
+font-size: 18px;
+font-family: "Playfair Display", serif;
+color: #998892;
+}
+.about-image img {
+width:90%;
+border-radius: 20px;
+height:70vh;
+border-style: ridge;
+}
+h1{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.team{
+color: #998892 ; 
+}
+
+h3{
+color: #998892 ;
+font-size: small;
+}
+/* About section */
+.about-section {
+text-align: center;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.about-section h2 {
+font-size: 2.5rem;
+
+}
+
+.about-section p {
+font-size: 1.2rem;
+
+}
+
+.team-cards {
+display: flex;
+justify-content: center;
+gap: 20px;
+
+}
+
+.team-member {
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+width: 280px;
+text-align: center;
+padding: 20px;
+
+}
+
+.team-member img {
+width: 70%;
+height: 33vh;
+object-fit: cover;
+border-radius: 50%;
+margin-bottom: 20px;
+}
+
+.team-member h3 {
+font-size: 1.6rem;
+margin-bottom: 10px;
+}
+
+.team-member p {
+font-size: 1rem;
+margin-bottom: 10px;
+color: #ad8c8c;
+}
+
+
+
+
+/* Footer */
+footer {
+background-color: #ad8c8c;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 50px;
+}
+
+
+
+/* Footer Styling */
+.footer {
+  background-color: #ad8c8c;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  gap: 5vh;
+}
+
+.footer-section h2 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6347;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8em;
+  }
+}
+/* Transparent Navbar Styling */
+.navbar {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #D63F77; /* Soft pink color */
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #555;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #D63F77; /* Soft pink hover color */
+}
+
+/* Marquee Styling */
+.marquee {
+background-color: #D63F77; /* Soft pink */
+color: white;
+font-weight: bold;
+padding: 8px 0;
+text-align: center;
+font-size: 1.2rem;
+white-space: nowrap;
+overflow: hidden;
+position: relative;
+}
+
+.marquee span {
+display: inline-block;
+animation: marquee-slide 15s linear infinite;
+}
+.carousel-inner{
+height: 80vh;
+}
+header {
+  background-color: #AD8C8C;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+nav a:hover {
+  text-decoration: underline;}
+ 
